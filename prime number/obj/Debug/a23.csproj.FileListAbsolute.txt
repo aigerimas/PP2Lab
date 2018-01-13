@@ -1,0 +1,7 @@
+c:\users\user\source\repos\a23\a23\obj\Debug\a23.csprojResolveAssemblyReference.cache
+c:\users\user\source\repos\a23\a23\obj\Debug\a23.csproj.CoreCompileInputs.cache
+C:\Users\User\source\repos\a23\a23\bin\Debug\a23.exe.config
+C:\Users\User\source\repos\a23\a23\bin\Debug\a23.exe
+C:\Users\User\source\repos\a23\a23\bin\Debug\a23.pdb
+C:\Users\User\source\repos\a23\a23\obj\Debug\a23.exe
+C:\Users\User\source\repos\a23\a23\obj\Debug\a23.pdb
