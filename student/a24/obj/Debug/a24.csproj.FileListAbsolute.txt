@@ -1,0 +1,7 @@
+C:\Users\User\source\repos\a24\a24\bin\Debug\a24.exe.config
+C:\Users\User\source\repos\a24\a24\bin\Debug\a24.exe
+C:\Users\User\source\repos\a24\a24\bin\Debug\a24.pdb
+C:\Users\User\source\repos\a24\a24\obj\Debug\a24.csprojResolveAssemblyReference.cache
+C:\Users\User\source\repos\a24\a24\obj\Debug\a24.csproj.CoreCompileInputs.cache
+C:\Users\User\source\repos\a24\a24\obj\Debug\a24.exe
+C:\Users\User\source\repos\a24\a24\obj\Debug\a24.pdb
