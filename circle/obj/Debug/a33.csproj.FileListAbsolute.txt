@@ -1,0 +1,7 @@
+c:\users\user\source\repos\a33\a33\bin\Debug\a33.exe.config
+c:\users\user\source\repos\a33\a33\bin\Debug\a33.exe
+c:\users\user\source\repos\a33\a33\bin\Debug\a33.pdb
+c:\users\user\source\repos\a33\a33\obj\Debug\a33.csprojResolveAssemblyReference.cache
+c:\users\user\source\repos\a33\a33\obj\Debug\a33.csproj.CoreCompileInputs.cache
+c:\users\user\source\repos\a33\a33\obj\Debug\a33.exe
+c:\users\user\source\repos\a33\a33\obj\Debug\a33.pdb
