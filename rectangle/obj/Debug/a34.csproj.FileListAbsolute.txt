@@ -1,0 +1,7 @@
+C:\Users\User\source\repos\a34\a34\bin\Debug\a34.exe.config
+C:\Users\User\source\repos\a34\a34\bin\Debug\a34.exe
+C:\Users\User\source\repos\a34\a34\bin\Debug\a34.pdb
+C:\Users\User\source\repos\a34\a34\obj\Debug\a34.csprojResolveAssemblyReference.cache
+C:\Users\User\source\repos\a34\a34\obj\Debug\a34.csproj.CoreCompileInputs.cache
+C:\Users\User\source\repos\a34\a34\obj\Debug\a34.exe
+C:\Users\User\source\repos\a34\a34\obj\Debug\a34.pdb
