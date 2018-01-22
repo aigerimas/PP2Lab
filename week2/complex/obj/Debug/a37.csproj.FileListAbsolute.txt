@@ -1,0 +1,7 @@
+C:\Users\User\source\repos\a37\a37\obj\Debug\a37.csproj.CoreCompileInputs.cache
+C:\Users\User\source\repos\a37\a37\bin\Debug\a37.exe.config
+C:\Users\User\source\repos\a37\a37\bin\Debug\a37.exe
+C:\Users\User\source\repos\a37\a37\bin\Debug\a37.pdb
+C:\Users\User\source\repos\a37\a37\obj\Debug\a37.exe
+C:\Users\User\source\repos\a37\a37\obj\Debug\a37.pdb
+C:\Users\User\source\repos\a37\a37\obj\Debug\a37.csprojResolveAssemblyReference.cache
