@@ -39,7 +39,7 @@ namespace a37
 			a = ax;
 			b = bx;
 		}
-		public void Simp() //complex c1; c1.Simp();
+		public void Simp() 
 		{
 			int z = GCD(this.a, this.b);
 			this.a = this.a / z;

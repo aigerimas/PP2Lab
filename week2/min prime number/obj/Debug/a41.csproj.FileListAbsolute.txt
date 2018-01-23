@@ -1,0 +1,7 @@
+C:\Users\User\source\repos\a41\a41\bin\Debug\a41.exe.config
+C:\Users\User\source\repos\a41\a41\bin\Debug\a41.exe
+C:\Users\User\source\repos\a41\a41\bin\Debug\a41.pdb
+C:\Users\User\source\repos\a41\a41\obj\Debug\a41.csprojResolveAssemblyReference.cache
+C:\Users\User\source\repos\a41\a41\obj\Debug\a41.csproj.CoreCompileInputs.cache
+C:\Users\User\source\repos\a41\a41\obj\Debug\a41.exe
+C:\Users\User\source\repos\a41\a41\obj\Debug\a41.pdb
