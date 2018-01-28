@@ -65,7 +65,6 @@ namespace a41
 			StreamWriter ws = new StreamWriter(sf);
 
 			ws.WriteLine(numbers[w]);
-			Console.WriteLine(numbers[w]);
 			ws.Close();
 			sf.Close();
 

@@ -21,6 +21,12 @@ namespace a24
 			gpa = 4;
 
 		}
+		public first(string firstName)
+		{
+			this.firstName = "Aigerim";
+		}
+
+
 		public override string ToString()
 		{
 			return firstName + " "+ secondName + " " + age + " " + gpa;
