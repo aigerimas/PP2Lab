@@ -1,0 +1,7 @@
+C:\Users\User\source\repos\a48\a48\bin\Debug\a48.exe.config
+C:\Users\User\source\repos\a48\a48\bin\Debug\a48.exe
+C:\Users\User\source\repos\a48\a48\bin\Debug\a48.pdb
+C:\Users\User\source\repos\a48\a48\obj\Debug\a48.csprojResolveAssemblyReference.cache
+C:\Users\User\source\repos\a48\a48\obj\Debug\a48.csproj.CoreCompileInputs.cache
+C:\Users\User\source\repos\a48\a48\obj\Debug\a48.exe
+C:\Users\User\source\repos\a48\a48\obj\Debug\a48.pdb
