@@ -1,0 +1,7 @@
+C:\Users\User\source\repos\Far\Far\bin\Debug\Far.exe.config
+C:\Users\User\source\repos\Far\Far\bin\Debug\Far.exe
+C:\Users\User\source\repos\Far\Far\bin\Debug\Far.pdb
+C:\Users\User\source\repos\Far\Far\obj\Debug\Far.csprojResolveAssemblyReference.cache
+C:\Users\User\source\repos\Far\Far\obj\Debug\Far.csproj.CoreCompileInputs.cache
+C:\Users\User\source\repos\Far\Far\obj\Debug\Far.exe
+C:\Users\User\source\repos\Far\Far\obj\Debug\Far.pdb
