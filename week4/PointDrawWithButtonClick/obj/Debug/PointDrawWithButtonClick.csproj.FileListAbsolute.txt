@@ -1,0 +1,7 @@
+C:\Users\User\source\repos\PointDrawWithButtonClick\PointDrawWithButtonClick\obj\Debug\PointDrawWithButtonClick.csprojResolveAssemblyReference.cache
+C:\Users\User\source\repos\PointDrawWithButtonClick\PointDrawWithButtonClick\obj\Debug\PointDrawWithButtonClick.csproj.CoreCompileInputs.cache
+C:\Users\User\source\repos\PointDrawWithButtonClick\PointDrawWithButtonClick\bin\Debug\PointDrawWithButtonClick.exe.config
+C:\Users\User\source\repos\PointDrawWithButtonClick\PointDrawWithButtonClick\bin\Debug\PointDrawWithButtonClick.exe
+C:\Users\User\source\repos\PointDrawWithButtonClick\PointDrawWithButtonClick\bin\Debug\PointDrawWithButtonClick.pdb
+C:\Users\User\source\repos\PointDrawWithButtonClick\PointDrawWithButtonClick\obj\Debug\PointDrawWithButtonClick.exe
+C:\Users\User\source\repos\PointDrawWithButtonClick\PointDrawWithButtonClick\obj\Debug\PointDrawWithButtonClick.pdb
