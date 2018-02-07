@@ -64,19 +64,22 @@ namespace Far
 							
 						}
 						break;
-					case ConsoleKey.Escape:
-						if (dir.Parent != null)
+						FileSystemInfo ff = dir.GetFileSystemInfos()[pos];
+						if (ff.GetType() == typeof(DirectoryInfo))
 						{
 							dir = dir.Parent;
-							pos = 0;
-							
 
 						}
-						
-							break;
+						if (ff.GetType() == typeof(FileInfo))
+						{
+							dir = new DirectoryInfo(Path.GetDirectoryName(ff.FullName));
+							dir = dir.Parent;
+							pos = 0;
+						}
+						break;
 
-						
-							
+
+
 				}
 			}
 		
