@@ -10,7 +10,7 @@ namespace snake2
 	class MainClass
 	{
 		public static int direction = 2;
-		public static int speed = 200;
+		public static int speed = 400;
 
 		static void MoveSnakeThread(object state)
 		{
