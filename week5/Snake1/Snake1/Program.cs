@@ -12,62 +12,91 @@ namespace Snake1
 		static void Main(string[] args)
 		{
 
-			Console.CursorVisible = false;
-			bool g = true;
+			Game.Init();
 
-			Snake snake = new Snake();
-			Food food = new Food();
-			Wall wall = new Wall();
-			food.SetRandomPosition();
-			while (g)
+
+			while (!Game.GameOver)
 			{
-				wall.LoadLevel();
-				//Отображение текущего уровня и счета
-				//food.Process(wall);
-				snake.Draw();
-				wall.Draw();
-				food.Draw();
+				Console.SetCursorPosition(0, 0);
+				Console.ForegroundColor = ConsoleColor.Blue;
+				Console.BackgroundColor = ConsoleColor.Black;
+
+				Console.Write(Game.counter);
+
 				ConsoleKeyInfo btn = Console.ReadKey();
 				switch (btn.Key)
 				{
 					case ConsoleKey.UpArrow:
-						snake.Move(0, -1);
+						Game.snake.Move(0, -1);
 						break;
 					case ConsoleKey.DownArrow:
-						snake.Move(0, 1);
+						Game.snake.Move(0, 1);
 						break;
 					case ConsoleKey.LeftArrow:
-						snake.Move(-1, 0);
+						Game.snake.Move(-1, 0);
 						break;
 					case ConsoleKey.RightArrow:
-						snake.Move(1, 0);
+						Game.snake.Move(1, 0);
 						break;
-					case ConsoleKey.Q:
-						g = false;
+					case ConsoleKey.F1:
+						Game.Serialize();
 						Console.Clear();
 						break;
-					case ConsoleKey.Enter:
-						wall.level = 1;
-						snake.body.Clear();
-						
-						snake = new Snake();
-
-						Console.Clear();
+					case ConsoleKey.F2:
+						Game.Desialize();
 						break;
 
 				}
 
-
-				snake.CanEat(food);
-				if (snake.GameOver(wall))
+				if (Game.snake.CanEat(Game.food))
 				{
-					g = false;
-					Console.Clear();
-					Console.WriteLine("GAMEOVER");
-					Console.ReadKey();
+					Game.food.SetPosition(Game.wall);
 				}
+				if (Game.counter == Game.level * 2)
+				{
+					Game.level++;
+					Game.wall = new Wall();
+					Console.Clear();
+					Console.SetCursorPosition(20, 20);
+					Console.ForegroundColor = ConsoleColor.White;
+					Console.WriteLine("GOOD JOB! " +
+						"PRESS ANY KEY TO PASS TO THE NEXT LEVEL");
+					Console.ReadKey();
+					Console.Clear();
+				}
+
+				if (Game.snake.Colision() == true || Game.snake.ColisionWithWall(Game.wall) == true)
+				{
+					Game.GameOver = true;
+					//Console.ReadKey();
+					Console.Clear();
+					Console.SetCursorPosition(15, 15);
+					Console.WriteLine("GAME OVER!");
+					Game.counter = 0;
+					Console.ReadKey();
+					Console.Clear();
+
+					Game.snake = new Snake();
+					Game.level = 1;
+					Game.wall = new Wall();
+				}
+				/*if (counter + Game.snake.cnt % 5 == 0)
+                {
+                    if (Game.speed > 0)
+                    {
+                        Game.speed -= 10;
+                    }
+                }*/
+
+				Game.Draw();
+				//Console.Clear();
 
 			}
 		}
-	}
-}
+		
+				}
+
+			}
+		
+	
+

@@ -9,17 +9,24 @@ namespace Far
 {
 	class Program
 	{
-		
 
-		static void showState(DirectoryInfo cur,int pos)
+
+		static void showState(DirectoryInfo cur, int pos)
 		{
 			FileSystemInfo[] infos = cur.GetFileSystemInfos();
 			for (int i = 0; i < infos.Length; i++)
 			{
-				Console.BackgroundColor = i == pos ? ConsoleColor.White : ConsoleColor.Black;
-				Console.ForegroundColor = infos[i].GetType() == typeof(DirectoryInfo) ? ConsoleColor.Magenta : ConsoleColor.Green;
+				if (pos == i)
+					Console.BackgroundColor = ConsoleColor.White;
+				else
+					Console.BackgroundColor = ConsoleColor.Black;
 				Console.WriteLine(infos[i].Name);
+
+
+
+
 			}
+			
 		}
 		static void Main(string[] args)
 		{
@@ -44,6 +51,7 @@ namespace Far
 						if (pos >= dir.GetFileSystemInfos().Length)
 							pos = 0;
 						break;
+						
 					case ConsoleKey.Enter:
 						FileSystemInfo f = dir.GetFileSystemInfos()[pos];
 						if (f.GetType() == typeof(DirectoryInfo))
@@ -64,6 +72,8 @@ namespace Far
 							
 						}
 						break;
+
+					case ConsoleKey.Escape:
 						FileSystemInfo ff = dir.GetFileSystemInfos()[pos];
 						if (ff.GetType() == typeof(DirectoryInfo))
 						{
@@ -77,8 +87,6 @@ namespace Far
 							pos = 0;
 						}
 						break;
-
-
 
 				}
 			}

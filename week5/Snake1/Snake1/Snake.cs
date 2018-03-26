@@ -12,17 +12,7 @@ namespace Snake1
 		public char sign;
 		public ConsoleColor color;
 
-		public static void END()
-		{
-			Console.SetCursorPosition(61, 9);
-			Console.ForegroundColor = ConsoleColor.Yellow;
-			Console.WriteLine("GAME OVER");
-
-
-
-		}
-
-
+	
 		public Snake()
 		{
 			sign = 'o';
@@ -61,44 +51,28 @@ namespace Snake1
 			return false;
 		}
 
-		public bool Eat(Food food)
-		{
-			if (body[0].x == food.location.x && body[0].y == food.location.y)
-			{
-				body.Add(new Point(body[body.Count - 1].x, body[body.Count - 1].y));
-				return true;
-			}
-			return false;
-		}
+		
 
 
-		public void NewLevel()
-		{//при переходе на новый уровень меняем локацию головы и тела змейки, чтобы избежать наложения со стенами
-			for (int i = 1; i <= body.Count - 1; i++)
-			{
-				body[i].x = 0;
-				body[i].y = 0;
-			}
-			body[0].x = 1;
-			body[0].y = 1;
-		}
+
 
 
 		public bool GameOver(Wall wall)
-		{//игра окончена в случае:
+		{
 			for (int i = 1; i < body.Count; i++)
-			{//если змейка ест саму себя
+			{
 				if (body[0].x == body[i].x && body[0].y == body[i].y)
 					return true;
 			}
 			for (int i = 0; i < wall.body.Count; i++)
-			{//если змейка ударяется о стену
+			{
 				if (body[0].x == wall.body[i].x && body[0].y == wall.body[i].y)
 					return true;
 			}
 			return false;
 
 		}
+
 		public void Draw()
 		{
 			int i = 0;

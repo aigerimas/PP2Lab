@@ -12,10 +12,6 @@ namespace Snake1
 		public List<Point> body;
 		public char sign;
 		public ConsoleColor Color;
-		public int level;
-	
-
-		public int Level { get; internal set; }
 
 		public Wall()
 		{

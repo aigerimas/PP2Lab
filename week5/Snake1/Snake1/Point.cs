@@ -15,6 +15,12 @@ namespace Snake1
 			x = _x;
 			y = _y;
 		}
+		public Point()
+		{
+			x = 0;
+			y = 0;
+
+		}
 
 
 	}
