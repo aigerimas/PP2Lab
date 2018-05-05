@@ -64,9 +64,9 @@ namespace Calc1
 			else
 			{
 				if (display.Text == "0" && btn.Text != ".")
-				display.Text = "";
+					display.Text = "";
 				display.Text += btn.Text;
-			}
+				}
         }
 
 		private void Operation_Click(object sender, EventArgs e)
@@ -75,8 +75,7 @@ namespace Calc1
 
 			calc.firstNumber = double.Parse(display.Text);
 			calc.operation = btn.Text;
-
-			if (calc.operation == "+" || calc.operation == "-" || calc.operation == "*" || calc.operation == "÷" || calc.operation == "xʸ" || calc.operation == "x⅟ ʸ")
+			if (calc.operation == "+" || calc.operation == "-" || calc.operation == "*" || calc.operation == "÷" || calc.operation == "xʸ" || calc.operation == "x^1/y")
 			{
 				display.Text = "";
 			}
@@ -89,37 +88,53 @@ namespace Calc1
 
 		private void result_Operation(object sender, EventArgs e)
 		{
+			
 			if (calc.operation != "")
 			{
 				if (display.Text == "")
+				
 					calc.secondNumber = calc.firstNumber;
-				else
-				{
+					else
+				    {
 					if (display.Text != calc.result.ToString())
 						calc.secondNumber = double.Parse(display.Text);
-				}
+					}
 				calc.calculate();
 				display.Text = calc.result.ToString();
-			calc.firstNumber = calc.result;
+				calc.firstNumber = calc.result;
+				
 			}
-		}
-			
+			}
+				
 		
-		private void Memory_click(object sender, EventArgs e)
+			private void Memory_click(object sender, EventArgs e)
 		{
 			Button btn = sender as Button;
-			switch (btn.Text)
+            switch (btn.Text)
 			{
+				
 				case "MS":
 					calc.memory = double.Parse(display.Text);
 					display.Text = calc.memory.ToString();
+					FileStream fs = new FileStream(@"memory.txt", FileMode.Open, FileAccess.Write);
+					StreamWriter sw = new StreamWriter(fs);
+					sw.WriteLine(calc.memory);
+					sw.Close();
+					fs.Close();
 					break;
 				case "MR":
 					display.Text = calc.memory.ToString();
+					FileStream ff= new FileStream(@"memory.txt", FileMode.Open, FileAccess.Read);
+					StreamWriter sww = new StreamWriter(ff);
+					sww.Close();
+					ff.Close();
 					break;
 				case "MC":
 					calc.memory = 0;
 					display.Text = calc.memory.ToString();
+					FileStream fss = new FileStream(@"memory.txt", FileMode.Open, FileAccess.Read);
+					StreamWriter sf = new StreamWriter(fss);
+					sf.WriteLine(0);
 					break;
 				case "M+":
 					calc.memory += double.Parse(display.Text);
@@ -144,18 +159,22 @@ namespace Calc1
 				calc.znak = true;
 			}
 		}
-		private void dot_Click(object sender,EventArgs e)
+		private void dot_Click(object sender, EventArgs e)
 		{
 			Button btn = sender as Button;
-			if (display.Text.Contains('.') && btn.Text == ".")
+			if (!display.Text.Contains('.') && btn.Text != ".")
 			{
-
+				if (display.Text == "" && btn.Text == ".")
+					display.Text = "0.";
 			}
 			else
 				display.Text += btn.Text;
-		}
+			
 
-		private void Clear_Click(object sender, EventArgs e)
+			}
+
+
+			private void Clear_Click(object sender, EventArgs e)
 		{
 			Button btn = sender as Button;
 			switch (btn.Text)

@@ -354,7 +354,7 @@
 			this.XPowOneoverY.Name = "XPowOneoverY";
 			this.XPowOneoverY.Size = new System.Drawing.Size(50, 50);
 			this.XPowOneoverY.TabIndex = 26;
-			this.XPowOneoverY.Text = "x⅟ ʸ  ";
+			this.XPowOneoverY.Text = "x^1/y";
 			this.XPowOneoverY.UseVisualStyleBackColor = false;
 			this.XPowOneoverY.Click += new System.EventHandler(this.Operation_Click);
 			// 
@@ -415,7 +415,7 @@
 			this.Controls.Add(this.Multiply);
 			this.Controls.Add(this.Devision);
 			this.Name = "Form1";
-			this.Text = "Form1";
+			this.Text = "My Calculator";
 			this.Load += new System.EventHandler(this.Form1_Load);
 			this.ResumeLayout(false);
 

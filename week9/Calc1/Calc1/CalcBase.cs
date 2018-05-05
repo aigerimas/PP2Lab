@@ -32,8 +32,8 @@ namespace Calc1
 				case "xʸ":
 					result = Math.Pow(firstNumber, secondNumber);
 					break;
-				case "x⅟ ʸ":
-						result = Math.Pow(firstNumber, 1 / secondNumber);
+				case "x^1/y":
+					result = Math.Pow(firstNumber, 1 / secondNumber);     
 					break;
 			}
 		}
